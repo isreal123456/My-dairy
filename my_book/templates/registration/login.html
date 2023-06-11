@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+    {% block title %}
+{#        {% load static %}#}
+{#        <link rel="stylesheet" href="{% static 'css/mystyle.css' %}">#}
+
+    {% endblock title %}
+
+<body>
+{% block content %}
+{% load static %}
+<h1> Login </h1>
+<div class="div">
+<form  style="text-align:center; font-size: 30px;" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="cd">Login</button>
+</form>
+<br>
+<a style="color: white;text-align:center; font-size: 30px" class="cd" href="{% url 'signup' %}">signup here</a>
+</div>
+{% endblock %}
+</body>
+</html>

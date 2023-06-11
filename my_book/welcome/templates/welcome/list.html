@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Created Messages</h1>
+{#{% if user.is_authenticated %}#}
+{#<p>Hi {{ user.username }}</p>#}
+{#{%endif%}#}
+{#<p><a class="cd" href="{% url 'create' %}">Shortcut to create</a></p>#}
+
+{% for message in message %}
+     <div class="c">
+    <div class="cd">
+<div class="m">
+<h3><a class="c" href="{% url 'detail' message.pk %}">{{ message.title }}</a></h3>
+</div>
+<p style="text-align: center">{{ message.created_at }}</p>
+</div>
+</div>
+
+
+{% endfor %} 
+
+
+
+
+{% endblock content  %}
+

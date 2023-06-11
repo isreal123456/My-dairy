@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+    <link rel="stylesheet" href="{% static 'css/detail.css' %}">
+{% endblock title %}
+{% block content %}
+    <h2 id="head">Title: {{ post.title }}</h2>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'static/detail.css' %}">
+    {% if post.picture %}
+        <h2><img src="{{ post.picture.url }}" alt="image" width="500" height="500" id="det"></h2>
+<h1> Message: </h1>
+        <h2 id="detr">{{ post.message }} </h2>
+    {% else %}
+        <h1> Message: </h1>
+        <h2 id="detr">{{ post.message }} </h2>
+    {% endif %}
+
+    <a href="{% url 'list1' %}">
+        <button class="cd">back</button>
+    </a>
+
+
+
+
+
+    {#{% for messages in post.name.all %}#}
+    {#<div class="comments">#}
+    {#<br>#}
+    {#<h5>posted by {{ messages.author }}-{{message.created_at }}</h5> #}
+    {#<h5>{{ messages.message }}</h5>#}
+    {#</div>#}
+    {##}
+    {#{% endfor %}#}
+
+
+
+
+
+{% endblock content %}

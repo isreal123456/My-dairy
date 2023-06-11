@@ -1,0 +1,121 @@
+dir {
+    color: aquamarine;
+}
+body{
+    background-color: #bbccdd;
+}
+img {
+}
+h1.head{
+    /*padding: 10px 50px 10px 10px;*/
+    text-align: center;
+    text-transform: capitalize;
+    text-shadow: 2px 2px #555d5d;
+    font-weight: bold;
+}
+#det{
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+}
+#detr{
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+}
+#head{
+    /*padding: 10px 50px 10px 10px;*/
+    text-align: center;
+    text-transform: capitalize;
+    text-shadow: 2px 2px #555d5d;
+    font-weight: bold;
+}
+button:hover.cd {
+    padding: 10px 24px;
+    background-color: #0f060d;
+    color: #3688f4;
+
+}
+button.cd{
+    padding: 10px 24px;
+    background-color: #3688f4;
+    color: #0f060d;
+}
+
+a.cd{
+    display: inline-block;
+    background-color: #3688f4;
+    padding: 10px 20px;
+    text-align: center;
+    color: #0f060d;
+    text-decoration: none;
+}
+
+a:hover.cd{
+    display: inline-block;
+    background-color: #0f060d;
+    padding: 10px 20px;
+    text-align: center;
+    color: #578bc9;
+    text-decoration: none;
+}
+
+a.c{
+    text-decoration: none;
+    color: #0f060d;
+}
+
+div.cd{
+    border-style: solid;
+    border-width: 3px;
+
+}
+div.c{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 150px;
+    padding-left: 150px;
+}
+div.m{
+    padding-left: 50%;
+    padding-right: 50%;
+}
+
+div.al{
+    /*margin-left: 200px;*/
+    border-radius: 5px;
+    border: solid white;
+    background-color: white;
+    text-align: center;
+
+}
+
+div.a{
+    padding-left: 200px;
+    padding-right: 200px;
+}
+input.c{
+    display: inline-block;
+    background-color: #3688f4;
+    padding: 10px 20px;
+    text-align: center;
+    color: #0f060d;
+    text-decoration: none;
+}
+
+input:hover.c{
+    display: inline-block;
+    background-color: #000000;
+    padding: 10px 20px;
+    text-align: center;
+    color: #578bc9;
+    text-decoration: none;
+}
+
+div.div{
+    padding-right: 600px;
+    padding-left: 600px;
+    border-radius: 5px;
+    border: solid white;
+    background-color: white;
+    text-align: center;
+}
