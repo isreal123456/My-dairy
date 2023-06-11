@@ -25,8 +25,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = "django-insecure-m%4pjd+g&e=j@8t=owt^dx@5!ruz&7fdm8h3(2$+j-o+nkgdhs"
-SECRET_KEY = os.environ.get('SECRET_KEY', default='your secret key')
+SECRET_KEY = "django-insecure-m%4pjd+g&e=j@8t=owt^dx@5!ruz&7fdm8h3(2$+j-o+nkgdhs"
+# SECRET_KEY = os.environ.get('SECRET_KEY', default='your secret key')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
@@ -90,7 +90,7 @@ WSGI_APPLICATION = "my_book.wsgi.application"
 import dj_database_url
 
 DATABASES = {
-    'default': dj_database_url.parse(env("DATABASE_URLcls"))
+    'default': dj_database_url.parse(env("DATABASE_URL"))
 }
 
 # Password validation
